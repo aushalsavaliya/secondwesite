@@ -13,6 +13,8 @@ import Contact from './Container/Contact/Contact';
 import Blog from './Container/Blog/Blog';
 import Blogdetailes from './Container/Blog/Blogdetails';
 import Tracking from './Container/Pages/Tracking/Tracking';
+import pro from './Admin/Component/Pro'
+import Leyout from './Admin/Container/Leyout';
 
 
 
@@ -20,7 +22,7 @@ import Tracking from './Container/Pages/Tracking/Tracking';
 function App() {
   return (
     <>
-    <Header />
+      {/* <Header />
       <Switch>
         <Route exact path={"/"} component={Home} />
         <Route exact path={"/Shope"} component={Shope} />
@@ -33,7 +35,14 @@ function App() {
         <Route exact path={"/Blog"} component={Blog} />
         <Route exact path={"/Blogdetails"} component={Blogdetailes} />
       </Switch>
-      <Footer />      
+      <Footer />       */}
+
+      <Leyout>
+        <Switch>
+          <Route exact path={"/pro"} Component={pro}/> 
+        </Switch>
+      </Leyout>
+
     </>
   );
 }
